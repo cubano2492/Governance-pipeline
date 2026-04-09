@@ -1,0 +1,15 @@
+export const DESIGN_CRITERIA = [
+  { id: 1, title: "Threat Model Coverage", category: "Threat Modelling", guidance: "Structured threat model covering all AI-specific attack surfaces including prompt injection, model inversion, indirect instruction sources. DFD with trust boundaries." },
+  { id: 2, title: "Data Classification & Flow Design", category: "Data Governance", guidance: "Data classification inventory for all inputs, outputs, retrieved content, logs. Data flow diagram enforcing classification at each boundary." },
+  { id: 3, title: "Identity & Credential Architecture", category: "Access Architecture", guidance: "Credential architecture for every service connection. OAuth 2.0, managed identities, vaulted secrets specified. No static secrets in design." },
+  { id: 4, title: "Least Privilege & Scope Design", category: "Access Architecture", guidance: "Permission manifest with functional justification for every scope. No wildcards or admin grants. Agentic tool boundaries defined." },
+  { id: 5, title: "Output Safety & Content Policy Design", category: "AI Safety Design", guidance: "Output safety architecture with AUP category mapping, refusal behaviour specification, and structured test plan." },
+  { id: 6, title: "Adversarial Robustness Design", category: "AI Safety Design", guidance: "Instruction trust hierarchy, RAG content trust model, input sanitisation approach, adversarial test battery scope." },
+  { id: 7, title: "Audit Logging Architecture", category: "Security Architecture", guidance: "Log schema with identity binding, tamper-evident storage, retention policy, SIEM integration plan." },
+  { id: 8, title: "Sensitive Data Leakage Prevention Design", category: "Data Governance", guidance: "System prompt confidentiality, RAG boundary controls, output scanning integration, cross-tenant isolation design." },
+  { id: 9, title: "Vendor & Third-Party Risk Design", category: "Vendor & Supply Chain", guidance: "Vendor inventory with VRA status, DPA/BAA identification, data residency and training data usage assessment per vendor." },
+  { id: 10, title: "Operational Boundary & Fallback Design", category: "AI Safety Design", guidance: "Authorised use cases, out-of-scope definitions, confidence thresholds, agentic action authorisation matrix, fallback responses." },
+  { id: 11, title: "Infrastructure Security Architecture", category: "Security Architecture", guidance: "Deployment topology, network segmentation, container hardening, image scanning, patch management, runtime monitoring design." },
+  { id: 12, title: "Change Control & Version Governance Design", category: "Operational Readiness", guidance: "Version control scope covering model versions, system prompts, tool configs, retrieval sources. Approval workflows by change type." },
+  { id: 13, title: "Incident Response & Killswitch Design", category: "Operational Readiness", guidance: "AI-specific IR plan, killswitch mechanism with RTO, rollback design, escalation paths, staging test plan." },
+];
